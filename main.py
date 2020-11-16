@@ -128,3 +128,38 @@ amount_a = get_seconds(2,30,0)
 amount_b = get_seconds(0,45,15)
 result = amount_a + amount_b
 print(result)
+
+
+
+# Question 10
+
+# Use the function to convert 5000 seconds
+# hours, minutes, seconds
+
+def convert_seconds(seconds):
+  hours = seconds // 3600
+  minutes = (seconds - hours * 3600) // 60
+  seconds = seconds - hours * 3600 - minutes * 60
+  return hours, minutes, seconds
+
+time = convert_seconds(5000)
+print(time)
+
+
+
+#Question 11
+
+# In this code, identify the repeated pattern and replace it with a function called month_days, that receives the name of the month and the number of days in that month as parameters. Adapt the rest of the code so that the result is the same. Confirm your results by making a function call with the correct parameters for both months listed
+
+## REPLACE THIS STARTER CODE WITH YOUR FUNCTION
+# june_days = 30
+# print("June has " + str(june_days) + " days.")
+# july_days = 31
+# print("July has " + str(july_days) + " days.")
+
+# My code for the above question
+def month_days(month,days):
+    print(month + " has " + str(days) + " days")
+    
+month_days('July', 31)
+month_days('June', 30)
